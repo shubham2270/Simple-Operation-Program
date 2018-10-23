@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head> 
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Simple Operation App</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
+</head>
+<body>
+<div class="container">
+    <div class="row">
+        <div class="col-md-12 col-sm-12 col-12 text-center">
+            <div class="wraper d-flex justify-content-center align-items-center" style="height:150px;">
+                    <h1 class="heading">Simple Operation App</h1>
+            </div>
+               
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-md-12 col-sm-12 col-12 d-flex justify-content-center align-items-center" style="height:70vh;">
+            <div class="card bg-primary p-4">
+                    
+                        <form>
+                           <div class="form-group">
+                            <input type="number" value="" id="firstnumber" placeholder="Enter the First number" class="form-control form-control-lg mb-4">
+                            <input type="number" value="" id="secondnumber" placeholder="Enter the Second number"  class="form-control form-control-lg  mb-4">
+                            <select  id="operation" name="operation"class="form-control form-control-lg mb-4">
+                                <option value="">Please choose Operation</option>
+                                <option value="addition">Addition +</option>
+                                <option value="substraction">Substraction -</option>
+                                <option value="division">Division /</option>
+                                <option value="multiply">Multiplication *</option>
+                                <option value="sqroot">Square root x*no of times</option>
+                            </select>
+                            <div class="wraper d-flex justify-content-center">
+                                <button  type="button" id="button" class="btn btn-lg custombtn mr-4">Calculate!</button>
+                                <button  type="reset" id="reset" class="btn btn-lg custombtn">Reset</button>
+                                
+                            </div> <br>
+                       </div>
+                    </form>
+                     <div class="wraper d-flex flex-column align-items-center">
+                            <h4 id="alertMsg"></h4>
+                            <h4 id="alertMsg1"></h4>
+                            <h1 id="display">Result Here!</h1>
+                    </div>
+            </div>
+        </div>
+    </div>
+    
+
+<!-- Js link -->
+<script src="script.js"></script>
+<!-- Bootstrap links -->
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
+</body>
+</html>

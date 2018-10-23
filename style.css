@@ -1,0 +1,62 @@
+html,body{
+    height: 100%;
+    width: 100%;
+  
+}
+
+body{
+    background-color: rgb(44, 44, 44) !important;
+}
+
+.card{
+    width: 500px;
+    height: 500px;
+    background: linear-gradient(to bottom left,#8A2387,#E94057,#F27121);
+    box-shadow: rgb(15, 15, 15) 8px 8px 40px;
+}
+
+.custombtn{
+    background-color: rgb(243, 230, 45);
+}
+
+.custombtn:hover{
+    background-color: rgb(216, 204, 41);
+}
+
+.heading{
+    color: white;
+}
+
+#display{
+    color: rgb(255, 255, 255);
+    font-size: 4rem;
+    animation: pop 1s;
+    transition: .4s ease-out;
+    transform: scale(1.2);
+    
+    
+}
+
+#alertMsg, #alertMsg1{
+    color: rgb(37, 18, 46);
+    transition: .4s;
+    transform: scale(0.9);
+    
+    
+   
+}
+
+
+@media only screen and (max-width:768px){
+    #display{
+        font-size: 3rem;
+    }
+
+    #alertMsg, #alertMsg1{
+        font-size: 17px;
+    }
+
+    .heading{
+        font-size: 30px;
+    }
+}
